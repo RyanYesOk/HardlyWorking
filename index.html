@@ -10,7 +10,7 @@
       asd = null;
       $.getJSON('https://www.reddit.com/r/all.json', function(data) {
         asd = data;
-        document.getElementById("asdsd").innerHTML = asd.stringify();
+        document.getElementById("asdsd").innerHTML = asd.data[0].title;
       });
     </script>
   </body>
